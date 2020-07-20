@@ -1,0 +1,54 @@
+{
+  "name": "client-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/core": "^0.7.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@reach/router": "^1.3.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
+    "emotion-theming": "^10.0.27",
+    "install": "^0.13.0",
+    "kurento-utils": "^6.13.1",
+    "npm": "^6.14.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "socket.io-client": "^2.3.0"
+  },
+  "scripts": {
+    "start:dev": "HTTPS=true SSL_CRT_FILE=./../keys/server.crt SSL_KEY_FILE=./../keys/server.key react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "clean": "rimraf ./build",
+    "deploy:clean": "rimraf ./../api/public",
+    "deploy": "mv ./build ./../api/public",
+    "build:deploy": "run-s clean build deploy:clean deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
