@@ -22,7 +22,7 @@
     "http-errors": "^1.7.3",
     "jsonwebtoken": "^8.5.1",
     "kurento-client": "^6.13.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "morgan": "~1.9.1",
     "slugify": "^1.4.0",
     "socket.io": "^2.3.0",
